@@ -27,7 +27,7 @@ If you want to statically link to liblua.a you can do that with `-tags luaa`. Lu
 specifying `-tags luajit`.
 
 The library uses lua5.1 by default but also supports lua5.2 by specifying `-tags lua52`, lua5.3 by
-specifying `-tags lua53`, and lua5.4 by specifying `-tags lua54`.
+specifying `-tags lua53`, and lua5.4 by specifying `-tags lua54`. If the library installed on your system has a dash, for example it is called `liblua-5.4` use the `lluadash` tag: `go build -tags lua54,lluadash ...`.
 
 QUICK START
 ---------------------
