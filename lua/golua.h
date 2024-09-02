@@ -33,4 +33,4 @@ void clua_sethook(lua_State* L, int n);
 
 int clua_isgofunction(lua_State *L, int n);
 int clua_isgostruct(lua_State *L, int n);
-
+LUA_API void *(lua_newuserdata) (lua_State *L, size_t sz);

@@ -1,4 +1,5 @@
-//+build lua54
+//go:build lua54
+// +build lua54
 
 package lua
 
@@ -14,7 +15,7 @@ typedef struct _chunk {
 	char* toread; // chunk to read
 } chunk;
 
-LUA_API void *lua_newuserdata (lua_State *L, size_t size) {
+LUA_API void *(lua_newuserdata) (lua_State *L, size_t size) {
     return lua_newuserdatauv(L, size, 1);
 }
 
