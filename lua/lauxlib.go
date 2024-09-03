@@ -195,6 +195,11 @@ func NewState() *State {
 // luaL_openlibs
 func (L *State) OpenLibs() {
 	C.luaL_openlibs(L.s)
+
+}
+
+// luad hide pcall
+func (L *State) HidePCall() {
 	C.clua_hide_pcall(L.s)
 }
 
